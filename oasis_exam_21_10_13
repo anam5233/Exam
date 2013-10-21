@@ -1,0 +1,76 @@
+<?php 
+function maximum($x, $y){
+	if($x>$y) return $x;
+	else return $y;
+}
+$a=23;
+$b=32;
+$val= maximum($a, $b);
+echo "The max of $a, $b is $val \n";
+?>
+<hr>
+<?php 
+echo "what does phpversion() do?"
+?>
+<hr>
+<?php
+$value=1;
+function simple(){
+	global $value;
+	$value=2;
+}
+echo $value."<br>";
+simple();
+echo $value."<br>";
+
+?>
+<hr>
+<?php
+$value=1;
+function simple_1(){
+	 
+	$value=2;
+}
+echo $value."<br>";
+simple_1();
+echo $value."<br>";
+
+?>
+<hr>
+<?php 
+$value=1;
+function sample(){
+	var_dump($value);
+}
+sample();
+?>
+<hr>
+<?php 
+function foo($my_string){
+	echo "$"."my_string = $my_string<br>";	
+}
+foo("foo is foo");
+Foo("foo is foo");
+foO("foo is foo");
+FOO("foo is foo");
+?>
+<hr>
+<?php 
+function function1(){
+	function function2(){
+		echo "Good Morning <br>";
+	}
+	echo "Good Morning 2 <br>";
+}
+function1();
+function2();
+?>
+<hr>
+<?php 
+function price($price=100){
+	echo "The price is : $price <br>";
+}
+price(200);
+price();
+price(100);
+?>
